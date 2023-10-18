@@ -7,19 +7,19 @@ import com.qa.base.BaseClass;
 import com.qa.pages.HomePage;
 
 public class TC_HomePage_004 extends BaseClass {
-	@Test(priority=1)
+	@Test(priority=0)
 	public void test1() {
 		TC_linkTest_001 tc1=new TC_linkTest_001();
 		tc1.linkTest();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void checkAllLink() {
 		HomePage hp=new HomePage(driver);
 		hp.checkAllLinks();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void checkCategoriesLink() {
 		HomePage hp=new HomePage(driver);
 		hp.checkMainCategories();
@@ -29,7 +29,7 @@ public class TC_HomePage_004 extends BaseClass {
 		Assert.assertEquals(actualLink, expectedLink);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void checkFeaturedProduct() throws InterruptedException {
 		HomePage hp=new HomePage(driver);
 		hp.featuredProducts();
