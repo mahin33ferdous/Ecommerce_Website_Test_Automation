@@ -3,6 +3,7 @@ package com.qa.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -88,11 +89,27 @@ public class HomePage extends BaseClass{
 		int totalItems= recomendedItems.size();
 		 
 		 System.out.println("Recomended items available: " + totalItems);
-		 Thread.sleep(5000);
+		 
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 // Scrolling dowm
+		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		 Thread.sleep(3000);
+		 
+		 // Scrolling down to the featured items
+		 WebElement location=driver.findElement(By.xpath("//div[@class='recommended_items']"));
+		 js.executeScript("arguments[0].scrollIntoView(true);",location );
+		 Thread.sleep(3000);
+
 		 recomendedItems.get(2).findElement(By.xpath("//div[@class='recommended_items']//div[@class='productinfo text-center']//a")).click();
 		 //  add '.' in the start of xpath so it can search within all element
-		 Thread.sleep(5000);
+		 Thread.sleep(3000);
 		 continueShopping.click();
+		 
+		 //Scrolling back to the top
+		 Thread.sleep(3000);
+		 js.executeScript("window.scrollTo(0,0)");
+		 Thread.sleep(3000);
+		 
 		 
 		
 		
