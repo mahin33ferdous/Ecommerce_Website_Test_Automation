@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.TC_HomePage_004">
         <methods>
-          <include name="checkCategoriesLink"/>
+          <include name="checkRecomendededProduct"/>
           <include name="close"/>
           <include name="startBrowser"/>
         </methods>

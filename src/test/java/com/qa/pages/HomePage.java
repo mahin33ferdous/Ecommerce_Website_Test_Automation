@@ -22,12 +22,25 @@ public class HomePage extends BaseClass{
 	
 	@FindBy(xpath="//ul[@class='nav navbar-nav']/li")
 	List <WebElement> CategoriesLinks;
+	
+//	Getting all featured items from homepage
+	@FindBy(xpath="//div[@class='features_items']//div[@class='col-sm-4']")
+ 	List <WebElement> featuredItems;
 //	
-//	@FindBy(xpath="//div[@class='item-box']")
-//	List <WebElement> featuredProducts;
-//	
-//	@FindBy(xpath="//input[@class='button-2 product-box-add-to-cart-button']")
-//	List <WebElement> featuredProductsAdd;
+	@FindBy(xpath="//div[@class='features_items']/div/div/div/div[2]/div/a")
+	List <WebElement> featuredItemsAddButton;
+	
+	//div[@class='recommended_items']/div/div/div/div/div/div/div[@class='productinfo text-center']/a
+	////div[@class='recommended_items']//div[@class='productinfo text-center']//a
+	
+	@FindBy(xpath="//div[@class='recommended_items']//div[@class='col-sm-4']")
+ 	List <WebElement> recomendedItems;
+	
+	@FindBy(xpath="//div[@class='features_items']/div/div/div/div[2]/div/a")
+	List <WebElement> recomendedItemsAddButton;
+	
+	@FindBy(xpath="//button[@class='btn btn-success close-modal btn-block']")
+	WebElement continueShopping;
 //	
 //	@FindBy (xpath="/html/body/div[4]/div[1]/div[1]/div[1]/a")
 //	WebElement title;
@@ -51,20 +64,37 @@ public class HomePage extends BaseClass{
 			for(WebElement elements : CategoriesLinks) {
 				System.out.println(elements.getText());
 			}
-		}	
-//	public void featuredProducts() throws InterruptedException {
-//		int totalProducts=featuredProducts.size();
-//		 
-//		 System.out.println("Featured Products availble: " + totalProducts);
-//		 
-//		 featuredProducts.get(1).findElement(By.xpath(".//input[@class='button-2 product-box-add-to-cart-button']")).click();
-//		 //  add '.' in the start of xpath so it can search within all element
-//		 Thread.sleep(3000);
-//		featuredProducts.get(1).click();
-//		
-//		Thread.sleep(4000);
-//		//title.click();
-//		
-//		
-//	}
+		}
+		
+	//add items from featured items	
+	public void featuredItemsVisible() throws InterruptedException {
+		int totalItems=featuredItems.size();
+		 
+		 System.out.println("Featured items available: " + totalItems);
+		 
+		
+		 
+		 featuredItems.get(4).findElement(By.xpath("//div[1]/div/div[2]/div[1]/div/div/div[1]/div[1]/a")).click();
+		 //  add '.' in the start of xpath so it can search within all element
+		 Thread.sleep(5000);
+		 
+		 continueShopping.click();
+		
+		
+	}
+	
+
+	public void recomendItemsVisible() throws InterruptedException {
+		int totalItems= recomendedItems.size();
+		 
+		 System.out.println("Recomended items available: " + totalItems);
+		 Thread.sleep(5000);
+		 recomendedItems.get(2).findElement(By.xpath("//div[@class='recommended_items']//div[@class='productinfo text-center']//a")).click();
+		 //  add '.' in the start of xpath so it can search within all element
+		 Thread.sleep(5000);
+		 continueShopping.click();
+		 
+		
+		
+	}
 }
