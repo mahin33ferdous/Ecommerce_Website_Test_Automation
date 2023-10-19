@@ -14,11 +14,19 @@ public class TC_RegisterPage_001 extends BaseClass {
 		tc1.linkTest();
 	}
 	
+//	@Test(priority=1)
+//	public void test2() throws InterruptedException {
+//      RegisterPage rp=new RegisterPage(driver);
+//      
+//      rp.register();
+//	}
+//	
+	
 	@Test(priority=1)
 	public void test2() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
       
-      rp.register();
+      rp.register("Mahin","mahin11@gmail.com");
 	}
 	
 	@Test(priority=2)

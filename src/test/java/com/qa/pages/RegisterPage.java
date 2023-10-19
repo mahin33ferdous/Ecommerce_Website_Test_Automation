@@ -28,27 +28,65 @@ public class RegisterPage extends BaseClass{
 	@FindBy(xpath="//*[contains(text(),'Signup')and @type='submit']")
 	WebElement signupSubmit;
 
+
 	
-	public void register() throws InterruptedException {
+	public void register(String n,String p) throws InterruptedException {
 		signup.click();
 		Thread.sleep(3000);
 		
 		name.click();
-		name.sendKeys("Mahin");
+		name.sendKeys(n);
 		Thread.sleep(3000);
-		email.sendKeys("mahin11@gmail.com");
+		email.sendKeys(p);
 		Thread.sleep(3000);
 		signupSubmit.click();
 	}
 	
+//	public void informationPage() throws InterruptedException {
+//		
+//		WebElement button=driver.findElement(By.xpath("//*[@id='id_gender2']"));
+//		button.click(); 
+//		boolean exp=true;
+//		boolean act=button.isSelected();
+//		Assert.assertEquals(act, exp);
+//		Thread.sleep(3000);
+//		
+//		WebElement password=driver.findElement(By.xpath("//*[@id='password']"));
+//		password.click();
+//		password.sendKeys("1234");
+//		Thread.sleep(3000);
+//		
+//		WebElement days=driver.findElement(By.xpath("//*[@id='days']"));
+//		Select selectDay=new Select(days);
+//		selectDay.selectByIndex(5);
+//		Thread.sleep(3000);
+//		
+//		WebElement months=driver.findElement(By.xpath("//*[@id='months']"));
+//		Select selectMonth=new Select(months);
+//		selectMonth.selectByIndex(6);
+//		Thread.sleep(3000);
+//		
+//		WebElement years=driver.findElement(By.xpath("//*[@id='years']"));
+//		Select selectYear=new Select(years);
+//		selectYear.selectByIndex(6);
+//		Thread.sleep(3000);
+//		
+//		WebElement check=driver.findElement(By.xpath("//input[@id='newsletter']"));
+//		check.click();
+//		Thread.sleep(3000);
+//		
+//		
+//	}
+//	
+	
 	public void informationPage() throws InterruptedException {
-		//driver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
+		
 		WebElement button=driver.findElement(By.xpath("//*[@id='id_gender2']"));
 		button.click(); 
 		boolean exp=true;
 		boolean act=button.isSelected();
 		Assert.assertEquals(act, exp);
-		Thread.sleep(3000);//*[@id='password']
+		Thread.sleep(3000);
 		
 		WebElement password=driver.findElement(By.xpath("//*[@id='password']"));
 		password.click();
