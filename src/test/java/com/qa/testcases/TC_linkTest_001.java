@@ -6,6 +6,7 @@ public class TC_linkTest_001 extends BaseClass {
  @Test
    public void linkTest() {
 	  
-	   driver.get("http://demowebshop.tricentis.com");
+//	   driver.get("http://demowebshop.tricentis.com");
+	 driver.get("https://www.automationexercise.com/");
    }
 }

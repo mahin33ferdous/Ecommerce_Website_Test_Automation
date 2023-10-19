@@ -14,25 +14,32 @@ public class TC_HomePage_004 extends BaseClass {
 	}
 	
 	@Test(priority=1)
-	public void checkAllLink() {
+	public void checkLinkCount() {
 		HomePage hp=new HomePage(driver);
-		hp.checkAllLinks();
-	}
-	
-	@Test(priority=2)
-	public void checkCategoriesLink() {
-		HomePage hp=new HomePage(driver);
-		hp.checkMainCategories();
+		hp.checkLinkCounts();
 		
-		int expectedLink=7;
-		int actualLink=hp.categoryCount();
-		Assert.assertEquals(actualLink, expectedLink);
+		int expectedLinkCount=147;;
+		
+		int actualLinkCount=hp.checkLinkCounts();
+		
+		//Hard assertion
+		Assert.assertEquals(actualLinkCount,expectedLinkCount);
 	}
 	
-	@Test(priority=3)
-	public void checkFeaturedProduct() throws InterruptedException {
-		HomePage hp=new HomePage(driver);
-		hp.featuredProducts();
-	}
+//	@Test(priority=2)
+//	public void checkCategoriesLink() {
+//		HomePage hp=new HomePage(driver);
+//		hp.checkMainCategories();
+//		
+//		int expectedLink=7;
+//		int actualLink=hp.categoryCount();
+//		Assert.assertEquals(actualLink, expectedLink);
+//	}
+//	
+//	@Test(priority=3)
+//	public void checkFeaturedProduct() throws InterruptedException {
+//		HomePage hp=new HomePage(driver);
+//		hp.featuredProducts();
+//	}
 }
 

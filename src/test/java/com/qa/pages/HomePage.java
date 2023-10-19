@@ -20,50 +20,51 @@ public class HomePage extends BaseClass{
 	
 	
 	
-	@FindBy(xpath="//ul[@class='top-menu']/li")
-	List <WebElement> CategoriesLinks;
+//	@FindBy(xpath="//ul[@class='top-menu']/li")
+//	List <WebElement> CategoriesLinks;
+//	
+//	@FindBy(xpath="//div[@class='item-box']")
+//	List <WebElement> featuredProducts;
+//	
+//	@FindBy(xpath="//input[@class='button-2 product-box-add-to-cart-button']")
+//	List <WebElement> featuredProductsAdd;
+//	
+//	@FindBy (xpath="/html/body/div[4]/div[1]/div[1]/div[1]/a")
+//	WebElement title;
 	
-	@FindBy(xpath="//div[@class='item-box']")
-	List <WebElement> featuredProducts;
-	
-	@FindBy(xpath="//input[@class='button-2 product-box-add-to-cart-button']")
-	List <WebElement> featuredProductsAdd;
-	
-	@FindBy (xpath="/html/body/div[4]/div[1]/div[1]/div[1]/a")
-	WebElement title;
-	
-	public void checkAllLinks() {
+	public int checkLinkCounts() {
 		 int totalLink=links.size();
 		 System.out.println(totalLink);
 		for(WebElement elements : links) {
 			System.out.println(elements.getText());
 		}
+		return totalLink;
 	}	
 	
-	public int categoryCount() {
-		 int totalLink=CategoriesLinks.size();
-		 System.out.println(totalLink);
-		 return totalLink;
-	}
-		public void checkMainCategories() {
-			categoryCount();
-			for(WebElement elements : CategoriesLinks) {
-				System.out.println(elements.getText());
-			}
-		}	
-	public void featuredProducts() throws InterruptedException {
-		int totalProducts=featuredProducts.size();
-		 
-		 System.out.println("Featured Products availble: " + totalProducts);
-		 
-		 featuredProducts.get(1).findElement(By.xpath(".//input[@class='button-2 product-box-add-to-cart-button']")).click();
-		 //  add '.' in the start of xpath so it can search within all element
-		 Thread.sleep(3000);
-		featuredProducts.get(1).click();
-		
-		Thread.sleep(4000);
-		//title.click();
-		
-		
-	}
+//	public int categoryCount() {
+//		 int totalLink=CategoriesLinks.size();
+//		 System.out.println(totalLink);
+//		 return totalLink;
+//	}
+//		public void checkMainCategories() {
+//			categoryCount();
+//			for(WebElement elements : CategoriesLinks) {
+//				System.out.println(elements.getText());
+//			}
+//		}	
+//	public void featuredProducts() throws InterruptedException {
+//		int totalProducts=featuredProducts.size();
+//		 
+//		 System.out.println("Featured Products availble: " + totalProducts);
+//		 
+//		 featuredProducts.get(1).findElement(By.xpath(".//input[@class='button-2 product-box-add-to-cart-button']")).click();
+//		 //  add '.' in the start of xpath so it can search within all element
+//		 Thread.sleep(3000);
+//		featuredProducts.get(1).click();
+//		
+//		Thread.sleep(4000);
+//		//title.click();
+//		
+//		
+//	}
 }
