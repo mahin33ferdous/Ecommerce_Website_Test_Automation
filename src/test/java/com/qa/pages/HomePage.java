@@ -20,8 +20,8 @@ public class HomePage extends BaseClass{
 	
 	
 	
-//	@FindBy(xpath="//ul[@class='top-menu']/li")
-//	List <WebElement> CategoriesLinks;
+	@FindBy(xpath="//ul[@class='nav navbar-nav']/li")
+	List <WebElement> CategoriesLinks;
 //	
 //	@FindBy(xpath="//div[@class='item-box']")
 //	List <WebElement> featuredProducts;
@@ -41,17 +41,17 @@ public class HomePage extends BaseClass{
 		return totalLink;
 	}	
 	
-//	public int categoryCount() {
-//		 int totalLink=CategoriesLinks.size();
-//		 System.out.println(totalLink);
-//		 return totalLink;
-//	}
-//		public void checkMainCategories() {
-//			categoryCount();
-//			for(WebElement elements : CategoriesLinks) {
-//				System.out.println(elements.getText());
-//			}
-//		}	
+	public int categoryLinkCount() {
+		 int totalLink=CategoriesLinks.size();
+		 System.out.println(totalLink);
+		 return totalLink;
+	}
+		public void checkMainCategories() {
+			categoryLinkCount();
+			for(WebElement elements : CategoriesLinks) {
+				System.out.println(elements.getText());
+			}
+		}	
 //	public void featuredProducts() throws InterruptedException {
 //		int totalProducts=featuredProducts.size();
 //		 

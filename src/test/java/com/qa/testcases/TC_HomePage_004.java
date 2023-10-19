@@ -26,15 +26,15 @@ public class TC_HomePage_004 extends BaseClass {
 		Assert.assertEquals(actualLinkCount,expectedLinkCount);
 	}
 	
-//	@Test(priority=2)
-//	public void checkCategoriesLink() {
-//		HomePage hp=new HomePage(driver);
-//		hp.checkMainCategories();
-//		
-//		int expectedLink=7;
-//		int actualLink=hp.categoryCount();
-//		Assert.assertEquals(actualLink, expectedLink);
-//	}
+	@Test(priority=2)
+	public void checkCategoriesLink() {
+		HomePage hp=new HomePage(driver);
+		hp.checkMainCategories();
+		
+		int expectedLinkCount=8;
+		int actualLinkCount=hp.categoryLinkCount();
+		Assert.assertEquals(actualLinkCount, expectedLinkCount);
+	}
 //	
 //	@Test(priority=3)
 //	public void checkFeaturedProduct() throws InterruptedException {
