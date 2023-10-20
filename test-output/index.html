@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shoily\AppData\Local\Temp\testng-eclipse--298511006\testng-customsuite.xml</span>
+                    <span>C:\Users\Shoily\AppData\Local\Temp\testng-eclipse-1204698308\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.qa.testcases.TC_LogInPage_002" class="method navigator-link" hash-for-method="loginWithEmptyInput">loginWithEmptyInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.testcases.TC_LogInPage_002" class="method navigator-link" hash-for-method="loginWithInvalidEmail">loginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.testcases.TC_LogInPage_002" class="method navigator-link" hash-for-method="loginWithInvalidPassword">loginWithInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,7 +150,25 @@
                   </a> <!-- loginWithEmptyInput -->
                   <span class="method-name">loginWithEmptyInput</span>
                   <em>
-(Varify User logged in with correct email and password)                  </em>
+(Varify User can't logged in with empty input field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidEmail">
+                  </a> <!-- loginWithInvalidEmail -->
+                  <span class="method-name">loginWithInvalidEmail</span>
+                  <em>
+(Varify User can't logged in invalid email address)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidPassword">
+                  </a> <!-- loginWithInvalidPassword -->
+                  <span class="method-name">loginWithInvalidPassword</span>
+                  <em>
+(Varify User can't logged in invalid password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -164,7 +192,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shoily\AppData\Local\Temp\testng-eclipse--298511006\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Shoily\AppData\Local\Temp\testng-eclipse-1204698308\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -213,24 +241,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginWithValidEmailAndPassword')
 data.setCell(0, 2, 'com.qa.testcases.TC_LogInPage_002')
-data.setCell(0, 3, 17148);
+data.setCell(0, 3, 16305);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithEmptyInput')
+data.setCell(1, 1, 'loginWithInvalidEmail')
 data.setCell(1, 2, 'com.qa.testcases.TC_LogInPage_002')
-data.setCell(1, 3, 13397);
+data.setCell(1, 3, 15655);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test1')
+data.setCell(2, 1, 'loginWithInvalidPassword')
 data.setCell(2, 2, 'com.qa.testcases.TC_LogInPage_002')
-data.setCell(2, 3, 4465);
+data.setCell(2, 3, 14303);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithEmptyInput')
+data.setCell(3, 2, 'com.qa.testcases.TC_LogInPage_002')
+data.setCell(3, 3, 12946);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test1')
+data.setCell(4, 2, 'com.qa.testcases.TC_LogInPage_002')
+data.setCell(4, 3, 4059);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -263,19 +299,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">1549 ms</span>
+                <span class="method-start">1340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyInput</span>
-                <span class="method-start">6017 ms</span>
+                <span class="method-start">5403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidEmail</span>
+                <span class="method-start">18350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidPassword</span>
+                <span class="method-start">34007 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithValidEmailAndPassword</span>
-                <span class="method-start">19416 ms</span>
+                <span class="method-start">48312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">36582 ms</span>
+                <span class="method-start">64631 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

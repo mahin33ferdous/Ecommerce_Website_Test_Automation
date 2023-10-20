@@ -29,7 +29,7 @@ public class TC_LogInPage_002 extends BaseClass {
 //		
 //	}
 	
-	@Test(priority=1, description = "Varify User logged in with correct email and password")
+	@Test(priority=1, description = "Varify User can't logged in with empty input field")
 	public void loginWithEmptyInput() throws InterruptedException {
 		LogInPage lp=new LogInPage(driver);
 		lp.login("", "");
@@ -40,9 +40,30 @@ public class TC_LogInPage_002 extends BaseClass {
 		
 	}
 	
+	@Test(priority=1, description = "Varify User can't logged in invalid email address")
+	public void loginWithInvalidEmail() throws InterruptedException {
+		LogInPage lp=new LogInPage(driver);
+		lp.login("wrong@gmail.com", "1234");
+
+	    boolean Error_Validate_Invalid_Email = driver.findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect!')]")).isDisplayed();
+		Assert.assertTrue(Error_Validate_Invalid_Email);
+
+		
+	}
 	
+	@Test(priority=2, description = "Varify User can't logged in invalid password")
+	public void loginWithInvalidPassword() throws InterruptedException {
+		LogInPage lp=new LogInPage(driver);
+		lp.login("mahin1111@gmail.com", "1234444444444444");
+
+	    boolean Error_Validate_Invalid_Email = driver.findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect!')]")).isDisplayed();
+		Assert.assertTrue(Error_Validate_Invalid_Email);
+
+		
+	}
+
 	
-	@Test(priority=2, description = "Varify User logged in with correct email and password")
+	@Test(priority=3, description = "Varify User logged in with correct email and password")
 	public void loginWithValidEmailAndPassword() throws InterruptedException {
 		LogInPage lp=new LogInPage(driver);
 		lp.login("mahin1111@gmail.com", "1234");

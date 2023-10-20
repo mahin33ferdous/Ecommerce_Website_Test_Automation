@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.testcases.TC_LogInPage_002">
         <methods>
-          <include name="loginWithEmptyInput"/>
-          <include name="startBrowser"/>
+          <include name="loginWithInvalidPassword"/>
           <include name="close"/>
+          <include name="startBrowser"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_LogInPage_002 -->
     </classes>
