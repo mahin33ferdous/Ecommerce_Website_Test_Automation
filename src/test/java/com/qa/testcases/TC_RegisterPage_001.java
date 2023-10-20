@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.base.BaseClass;
+import com.qa.pages.LogInPage;
 import com.qa.pages.RegisterPage;
 
 public class TC_RegisterPage_001 extends BaseClass {
@@ -74,7 +75,6 @@ public class TC_RegisterPage_001 extends BaseClass {
       boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
 	  Assert.assertTrue(isUserNameExist);
 	 }
-	
 	
 
 }

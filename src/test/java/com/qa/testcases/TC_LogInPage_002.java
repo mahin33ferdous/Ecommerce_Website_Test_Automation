@@ -72,5 +72,15 @@ public class TC_LogInPage_002 extends BaseClass {
 		Assert.assertTrue(isUserNameExist);
 		
 	}
+	
+	@Test(priority=4, description = "Varify User logged out")
+	public void logOut() throws InterruptedException {
+		LogInPage lp=new LogInPage(driver);
+		lp.doLogOut();
+		
+	    boolean isLoginVisible = driver.findElement(By.xpath("//a[@href=\"/login\"]")).isDisplayed();
+		Assert.assertTrue(isLoginVisible);
+		
+	}
 
 }

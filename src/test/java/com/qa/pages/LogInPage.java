@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,6 +49,12 @@ public class LogInPage extends BaseClass{
 		loginSubmit.click();
 		Thread.sleep(3000);
 	
+	}
+	
+	public void doLogOut() throws InterruptedException {
+		WebElement logOutButton=driver.findElement(By.xpath("//a[@href=\"/logout\"]"));
+		logOutButton.click();
+		Thread.sleep(1000);
 	}
 
 }
