@@ -18,6 +18,8 @@ public class TC_RegisterPage_001 extends BaseClass {
 		tc1.linkTest();
 	}
 	
+	
+	
 	@Test(priority=1, description = "User shall not be proceed signup with blank input")
 	public void doSignUpWithBlankInput() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
@@ -30,6 +32,8 @@ public class TC_RegisterPage_001 extends BaseClass {
 		Assert.assertEquals(actualTitle, ExpTitle);
 	 }
 	
+	
+	
 	// fill up register page with valid name and email
 	@Test(priority=2, description = "User shall be proceed to signup with valid name and email")
 	public void doSignUpWithValidEmail() throws InterruptedException {
@@ -41,6 +45,8 @@ public class TC_RegisterPage_001 extends BaseClass {
 		Assert.assertEquals(actualTitle, ExpTitle);
     }
 	
+	
+	// keep name and email field empty
 	@Test(priority=3, description = "User account shall not be created with blank information input")
 	public void fillSignupInfoWithBlankInput() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
@@ -55,6 +61,8 @@ public class TC_RegisterPage_001 extends BaseClass {
 
     }
 	
+	
+	
 	@Test(priority=4, description = "User account shall be created with all required information input")
 	public void fillupValidSignupInformation() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
@@ -67,6 +75,8 @@ public class TC_RegisterPage_001 extends BaseClass {
 	}
 	
 	
+	
+	
 	@Test(priority=5, description = "User shall be logged in and username must be showing")
 	public void verifyUserAccout() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
@@ -76,5 +86,24 @@ public class TC_RegisterPage_001 extends BaseClass {
 	  Assert.assertTrue(isUserNameExist);
 	 }
 	
+	
+	
+	@Test(priority=6, description = "Varify User logged out")
+	public void logOut() throws InterruptedException {
+		TC_LogInPage_002 tc2=new TC_LogInPage_002();
+		tc2.logOut();
+	}
+	
+	
+	
+	@Test(priority=7, description = "Varify User can't create account with already used email")
+	public void signUpWithSameEmail() throws InterruptedException {
+	     RegisterPage rp=new RegisterPage(driver);
+	     rp.register("Mahin22","mahin1111@gmail.com");
 
+	    boolean Error_Already_used_Email = driver.findElement(By.xpath("//p[contains(text(),'Email Address already exist!')]")).isDisplayed();
+		Assert.assertTrue(Error_Already_used_Email);
+
+		
+	}
 }

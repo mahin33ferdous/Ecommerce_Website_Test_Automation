@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T01:30:19 GMT-11:00" name="Default suite" finished-at="2023-10-20T01:31:27 GMT-11:00" duration-ms="68700">
+  <suite started-at="2023-10-20T01:40:02 GMT-11:00" name="Default suite" finished-at="2023-10-20T01:40:13 GMT-11:00" duration-ms="11369">
     <groups>
     </groups>
-    <test started-at="2023-10-20T01:30:19 GMT-11:00" name="Default test" finished-at="2023-10-20T01:31:27 GMT-11:00" duration-ms="68700">
-      <class name="com.qa.testcases.TC_LogInPage_002">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:30:17 GMT-11:00" name="startBrowser" finished-at="2023-10-20T01:30:19 GMT-11:00" duration-ms="1325" status="PASS">
+    <test started-at="2023-10-20T01:40:02 GMT-11:00" name="Default test" finished-at="2023-10-20T01:40:13 GMT-11:00" duration-ms="11369">
+      <class name="com.qa.testcases.TC_RegisterPage_001">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@36ebc363]" started-at="2023-10-20T01:40:00 GMT-11:00" name="startBrowser" finished-at="2023-10-20T01:40:02 GMT-11:00" duration-ms="2038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:30:19 GMT-11:00" name="test1" finished-at="2023-10-20T01:30:23 GMT-11:00" duration-ms="4584" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@36ebc363]" started-at="2023-10-20T01:40:02 GMT-11:00" name="test1" finished-at="2023-10-20T01:40:07 GMT-11:00" duration-ms="5043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="loginWithEmptyInput()[pri:1, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:30:23 GMT-11:00" name="loginWithEmptyInput" description="Varify User can&#039;t logged in with empty input field" finished-at="2023-10-20T01:30:37 GMT-11:00" duration-ms="13494" status="PASS">
+        <test-method signature="signUpWithSameEmail()[pri:6, instance:com.qa.testcases.TC_RegisterPage_001@36ebc363]" started-at="2023-10-20T01:40:07 GMT-11:00" name="signUpWithSameEmail" description="Varify User can&#039;t create account with already used email" finished-at="2023-10-20T01:40:13 GMT-11:00" duration-ms="6301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithEmptyInput -->
-        <test-method signature="loginWithInvalidEmail()[pri:1, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:30:37 GMT-11:00" name="loginWithInvalidEmail" description="Varify User can&#039;t logged in invalid email address" finished-at="2023-10-20T01:30:53 GMT-11:00" duration-ms="15998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidEmail -->
-        <test-method signature="loginWithInvalidPassword()[pri:2, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:30:53 GMT-11:00" name="loginWithInvalidPassword" description="Varify User can&#039;t logged in invalid password" finished-at="2023-10-20T01:31:08 GMT-11:00" duration-ms="15299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidPassword -->
-        <test-method signature="loginWithValidEmailAndPassword()[pri:3, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:31:08 GMT-11:00" name="loginWithValidEmailAndPassword" description="Varify User logged in with correct email and password" finished-at="2023-10-20T01:31:25 GMT-11:00" duration-ms="16621" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidEmailAndPassword -->
-        <test-method signature="logOut()[pri:4, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:31:25 GMT-11:00" name="logOut" description="Varify User logged out" finished-at="2023-10-20T01:31:27 GMT-11:00" duration-ms="2674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_LogInPage_002@54d9d12d]" started-at="2023-10-20T01:31:27 GMT-11:00" name="close" finished-at="2023-10-20T01:31:27 GMT-11:00" duration-ms="133" status="PASS">
+        </test-method> <!-- signUpWithSameEmail -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@36ebc363]" started-at="2023-10-20T01:40:13 GMT-11:00" name="close" finished-at="2023-10-20T01:40:13 GMT-11:00" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.qa.testcases.TC_LogInPage_002 -->
+      </class> <!-- com.qa.testcases.TC_RegisterPage_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
