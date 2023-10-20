@@ -5,7 +5,8 @@
     <classes>
       <class name="com.qa.testcases.TC_RegisterPage_001">
         <methods>
-          <include name="test3"/>
+          <include name="doSignUpWithBlankInput"/>
+          <include name="doSignUpWithValidEmail"/>
           <include name="startBrowser"/>
           <include name="close"/>
         </methods>
