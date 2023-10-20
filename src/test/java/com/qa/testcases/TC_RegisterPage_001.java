@@ -23,9 +23,9 @@ public class TC_RegisterPage_001 extends BaseClass {
       rp.signUpWithBlankInput();
       Thread.sleep(2000);
       
-		String title= driver.getTitle();
-		String ExpTitle= "Automation Exercise";
-		Assert.assertEquals(title, ExpTitle);
+		String actualTitle= driver.getTitle();
+		String ExpTitle= "Automation Exercise - Signup / Login"; // will stay in same page
+		Assert.assertEquals(actualTitle, ExpTitle);
 		
 
     }
@@ -34,22 +34,37 @@ public class TC_RegisterPage_001 extends BaseClass {
 	@Test(priority=2, description = "User shall be proceed to signup with valid name and email")
 	public void doSignUpWithValidEmail() throws InterruptedException {
      RegisterPage rp=new RegisterPage(driver);
-      
-     rp.register("Mahin","mahin11@gmail.com");
-		String title= driver.getTitle();
-		String ExpTitle= "Automation Exercise - Signup";
-		Assert.assertEquals(title, ExpTitle);
+        rp.register("Mahin","mahin11@gmail.com");
+        
+		String actualTitle= driver.getTitle();
+		String ExpTitle= "Automation Exercise - Signup"; // will redirect to signup page
+		Assert.assertEquals(actualTitle, ExpTitle);
     }
 	
+	@Test(priority=3, description = "User account shall not be created with blank information input")
+	public void fillSignupInfoWithBlankInput() throws InterruptedException {
+      RegisterPage rp=new RegisterPage(driver);
+      
+      rp.signUpInfoBlankInput();
+      Thread.sleep(2000);
+      
+		String actualTitle= driver.getTitle();
+		String ExpTitle= "Automation Exercise - Signup"; // will remain to signup page
+		Assert.assertEquals(actualTitle, ExpTitle);
+  
 
-//	
-//	@Test(priority=3)
-//	public void test3() throws InterruptedException {
-//      RegisterPage rp=new RegisterPage(driver);
-//      
-//      rp.informationPage("1234",5,6,6);
-//      rp.addressInfo("Mahin","Ferdous","xyz company","ecb road, 1206","dhaka","dhaka","1216","444444444");
-//	}
+    }
+	
+	@Test(priority=4, description = "User account shall be created with all required information input")
+	public void fillupValidSignupInformation() throws InterruptedException {
+      RegisterPage rp=new RegisterPage(driver);
+      
+      rp.informationPage("1234",5,6,6);
+      rp.addressInfo("Mahin","Ferdous","xyz company","ecb road, 1206","dhaka","dhaka","1216","444444444");
+		String actualTitle= driver.getTitle();
+		String ExpTitle= "Automation Exercise - Account Created"; // will redirect to account created validation page
+		Assert.assertEquals(actualTitle, ExpTitle);
+	}
 	
 	
 	

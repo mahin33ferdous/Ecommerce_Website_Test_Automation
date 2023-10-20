@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T20:08:34 GMT-11:00" name="Default suite" finished-at="2023-10-19T20:08:55 GMT-11:00" duration-ms="21322">
+  <suite started-at="2023-10-19T20:48:59 GMT-11:00" name="Default suite" finished-at="2023-10-19T20:49:47 GMT-11:00" duration-ms="47808">
     <groups>
     </groups>
-    <test started-at="2023-10-19T20:08:34 GMT-11:00" name="Default test" finished-at="2023-10-19T20:08:55 GMT-11:00" duration-ms="21322">
+    <test started-at="2023-10-19T20:48:59 GMT-11:00" name="Default test" finished-at="2023-10-19T20:49:47 GMT-11:00" duration-ms="47808">
       <class name="com.qa.testcases.TC_RegisterPage_001">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@45752059]" started-at="2023-10-19T20:08:33 GMT-11:00" name="startBrowser" finished-at="2023-10-19T20:08:34 GMT-11:00" duration-ms="1502" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:48:58 GMT-11:00" name="startBrowser" finished-at="2023-10-19T20:48:59 GMT-11:00" duration-ms="1235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@45752059]" started-at="2023-10-19T20:08:34 GMT-11:00" name="test1" finished-at="2023-10-19T20:08:38 GMT-11:00" duration-ms="3840" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:48:59 GMT-11:00" name="test1" finished-at="2023-10-19T20:49:06 GMT-11:00" duration-ms="6914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="doSignUpWithBlankInput()[pri:1, instance:com.qa.testcases.TC_RegisterPage_001@45752059]" started-at="2023-10-19T20:08:38 GMT-11:00" name="doSignUpWithBlankInput" description="User shall not be proceed signup with blank input" finished-at="2023-10-19T20:08:46 GMT-11:00" duration-ms="8271" status="PASS">
+        <test-method signature="doSignUpWithBlankInput()[pri:1, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:49:06 GMT-11:00" name="doSignUpWithBlankInput" description="User shall not be proceed signup with blank input" finished-at="2023-10-19T20:49:13 GMT-11:00" duration-ms="7516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSignUpWithBlankInput -->
-        <test-method signature="doSignUpWithValidEmail()[pri:2, instance:com.qa.testcases.TC_RegisterPage_001@45752059]" started-at="2023-10-19T20:08:46 GMT-11:00" name="doSignUpWithValidEmail" description="User shall be proceed to signup with valid name and email" finished-at="2023-10-19T20:08:55 GMT-11:00" duration-ms="9184" status="PASS">
+        <test-method signature="doSignUpWithValidEmail()[pri:2, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:49:13 GMT-11:00" name="doSignUpWithValidEmail" description="User shall be proceed to signup with valid name and email" finished-at="2023-10-19T20:49:20 GMT-11:00" duration-ms="6903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSignUpWithValidEmail -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@45752059]" started-at="2023-10-19T20:08:56 GMT-11:00" name="close" finished-at="2023-10-19T20:08:56 GMT-11:00" duration-ms="272" status="PASS">
+        <test-method signature="fillSignupInfoWithBlankInput()[pri:3, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:49:20 GMT-11:00" name="fillSignupInfoWithBlankInput" description="User account shall not be created with blank information input" finished-at="2023-10-19T20:49:26 GMT-11:00" duration-ms="6108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSignupInfoWithBlankInput -->
+        <test-method signature="fillupValidSignupInformation()[pri:4, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:49:26 GMT-11:00" name="fillupValidSignupInformation" description="User account shall be created with all required information input" finished-at="2023-10-19T20:49:47 GMT-11:00" duration-ms="20343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillupValidSignupInformation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_RegisterPage_001@3c41ed1d]" started-at="2023-10-19T20:49:47 GMT-11:00" name="close" finished-at="2023-10-19T20:49:47 GMT-11:00" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
