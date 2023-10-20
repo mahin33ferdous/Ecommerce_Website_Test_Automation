@@ -19,6 +19,9 @@ public class RegisterPage extends BaseClass{
 	@FindBy(xpath="//ul[@class='nav navbar-nav']/li[4]/a")
 	WebElement signup;
 	
+	@FindBy(xpath="//a[@href=\"/login\"]")
+	WebElement signup1;
+	
 	@FindBy(xpath="//input[@name='name']")
 	WebElement name;
 	
@@ -36,7 +39,7 @@ public class RegisterPage extends BaseClass{
 	}
 	
 	public void signUpWithBlankInput() throws InterruptedException {
-		  signup.click();
+		  signup1.click();
 		 Thread.sleep(2000);
 		 signupSubmit.click();;
 		 Thread.sleep(2000);

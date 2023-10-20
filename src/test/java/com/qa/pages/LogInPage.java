@@ -12,8 +12,11 @@ public class LogInPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//ul[@class='nav navbar-nav']/li[4]/a")
+	@FindBy(xpath="//a[@href=\"/login\"]")
 	WebElement login;
+	
+//	@FindBy(xpath="//ul[@class='nav navbar-nav']/li[4]/a")
+//	WebElement login;
 	
 	@FindBy(xpath="//input[@data-qa='login-email']")
 	WebElement email;
@@ -25,6 +28,11 @@ public class LogInPage extends BaseClass{
 	WebElement loginSubmit;
 	
 	
+	public void loginWithEmptyInput() throws InterruptedException {
+		loginSubmit.click();
+		Thread.sleep(3000);
+		
+	}
 
 	
 	public void login(String e,String p) throws InterruptedException {

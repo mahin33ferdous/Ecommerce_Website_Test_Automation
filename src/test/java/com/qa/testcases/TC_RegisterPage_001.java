@@ -66,16 +66,12 @@ public class TC_RegisterPage_001 extends BaseClass {
 	}
 	
 	
-	@Test(priority=5, description = "User shall not be proceed signup with blank input")
-	public void doLogOut() throws InterruptedException {
+	@Test(priority=5, description = "User shall be logged in and username must be showing")
+	public void verifyUserAccout() throws InterruptedException {
       RegisterPage rp=new RegisterPage(driver);
+      rp.verifyUserAccount();
       
-      rp.doLogOut();
-      
-//      String actualTitle= driver.getTitle();
-//	  String ExpTitle= "Automation Exercise"; // will redirect to home  //ul[@class='nav navbar-nav']/li[4]/a  
-	  boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
-	
+      boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
 	  Assert.assertTrue(isUserNameExist);
 	 }
 	
