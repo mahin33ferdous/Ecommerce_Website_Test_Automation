@@ -65,7 +65,7 @@ public class RegisterPage extends BaseClass{
 		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		 Thread.sleep(1000);
 		 
-		// WebElement location2=driver.findElement(By.xpath("//*[contains(text(),'Create Account')]"));
+		
 		 js.executeScript("arguments[0].scrollIntoView(true);",createAccount);
 		 Thread.sleep(1000);
 		 
@@ -172,4 +172,15 @@ public class RegisterPage extends BaseClass{
 		 Thread.sleep(1000);
 		
        }
+	public void verifyUserAccount() throws InterruptedException {
+		WebElement continueButton=driver.findElement(By.xpath("//a[@class=\"btn btn-primary\"]"));
+		continueButton.click();
+		Thread.sleep(1000);
+	}
+	
+	public void doLogOut() throws InterruptedException {
+		WebElement logOutButton=driver.findElement(By.xpath("//a[@href=\"/logout\"]"));
+		logOutButton.click();
+		Thread.sleep(1000);
+	}
 }

@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,15 +27,13 @@ public class TC_RegisterPage_001 extends BaseClass {
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup / Login"; // will stay in same page
 		Assert.assertEquals(actualTitle, ExpTitle);
-		
-
-    }
+	 }
 	
 	// fill up register page with valid name and email
 	@Test(priority=2, description = "User shall be proceed to signup with valid name and email")
 	public void doSignUpWithValidEmail() throws InterruptedException {
      RegisterPage rp=new RegisterPage(driver);
-        rp.register("Mahin","mahin11@gmail.com");
+        rp.register("Mahin","mahin1111@gmail.com");
         
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup"; // will redirect to signup page
@@ -66,6 +65,19 @@ public class TC_RegisterPage_001 extends BaseClass {
 		Assert.assertEquals(actualTitle, ExpTitle);
 	}
 	
+	
+	@Test(priority=5, description = "User shall not be proceed signup with blank input")
+	public void doLogOut() throws InterruptedException {
+      RegisterPage rp=new RegisterPage(driver);
+      
+      rp.doLogOut();
+      
+//      String actualTitle= driver.getTitle();
+//	  String ExpTitle= "Automation Exercise"; // will redirect to home  //ul[@class='nav navbar-nav']/li[4]/a  
+	  boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
+	
+	  Assert.assertTrue(isUserNameExist);
+	 }
 	
 	
 

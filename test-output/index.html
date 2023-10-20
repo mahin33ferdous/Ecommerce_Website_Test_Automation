@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shoily\AppData\Local\Temp\testng-eclipse-1617940905\testng-customsuite.xml</span>
+                    <span>C:\Users\Shoily\AppData\Local\Temp\testng-eclipse--1604647484\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.testcases.TC_RegisterPage_001" class="method navigator-link" hash-for-method="doLogOut">doLogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.qa.testcases.TC_RegisterPage_001" class="method navigator-link" hash-for-method="doSignUpWithBlankInput">doSignUpWithBlankInput</a> <!-- method navigator-link -->
@@ -144,6 +149,15 @@
               <span class="class-name">com.qa.testcases.TC_RegisterPage_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogOut">
+                  </a> <!-- doLogOut -->
+                  <span class="method-name">doLogOut</span>
+                  <em>
+(User shall not be proceed signup with blank input)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="doSignUpWithBlankInput">
@@ -192,7 +206,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shoily\AppData\Local\Temp\testng-eclipse-1617940905\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Shoily\AppData\Local\Temp\testng-eclipse--1604647484\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -241,32 +255,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'fillupValidSignupInformation')
 data.setCell(0, 2, 'com.qa.testcases.TC_RegisterPage_001')
-data.setCell(0, 3, 20343);
+data.setCell(0, 3, 20219);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doSignUpWithBlankInput')
+data.setCell(1, 1, 'doLogOut')
 data.setCell(1, 2, 'com.qa.testcases.TC_RegisterPage_001')
-data.setCell(1, 3, 7516);
+data.setCell(1, 3, 11956);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test1')
+data.setCell(2, 1, 'doSignUpWithBlankInput')
 data.setCell(2, 2, 'com.qa.testcases.TC_RegisterPage_001')
-data.setCell(2, 3, 6914);
+data.setCell(2, 3, 7195);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'doSignUpWithValidEmail')
 data.setCell(3, 2, 'com.qa.testcases.TC_RegisterPage_001')
-data.setCell(3, 3, 6903);
+data.setCell(3, 3, 6692);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'fillSignupInfoWithBlankInput')
 data.setCell(4, 2, 'com.qa.testcases.TC_RegisterPage_001')
-data.setCell(4, 3, 6108);
+data.setCell(4, 3, 6117);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test1')
+data.setCell(5, 2, 'com.qa.testcases.TC_RegisterPage_001')
+data.setCell(5, 3, 3527);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -299,27 +317,31 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">1253 ms</span>
+                <span class="method-start">1236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">doSignUpWithBlankInput</span>
-                <span class="method-start">8170 ms</span>
+                <span class="method-start">4767 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">doSignUpWithValidEmail</span>
-                <span class="method-start">15687 ms</span>
+                <span class="method-start">11964 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillSignupInfoWithBlankInput</span>
-                <span class="method-start">22591 ms</span>
+                <span class="method-start">18657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillupValidSignupInformation</span>
-                <span class="method-start">28700 ms</span>
+                <span class="method-start">24775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogOut</span>
+                <span class="method-start">44996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">49065 ms</span>
+                <span class="method-start">56975 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
