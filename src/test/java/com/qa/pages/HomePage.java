@@ -133,4 +133,12 @@ public class HomePage extends BaseClass{
 		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
 		Thread.sleep(2000); 
 	}
+	
+	public void paymentAndConfirm() throws InterruptedException {
+		 
+		driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
+		Thread.sleep(2000); 
+		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
+		Thread.sleep(2000); 
+	}
 }

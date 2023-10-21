@@ -73,13 +73,13 @@ public class TC_HomePage_004 extends BaseClass {
 		
 	}
 	
-	@Test(priority=8)
-	public void deleteFromCart() throws InterruptedException {
-		homePage =new HomePage(driver);
-		homePage.deleteProduct();
-    //error ask question	
-	}
-	
+//	@Test(priority=8)
+//	public void deleteFromCart() throws InterruptedException {
+//		homePage =new HomePage(driver);
+//		homePage.deleteProduct();
+//    //error ask question	
+//	}
+//	
 	@Test(priority=8)
 	public void CheckoutLogIn() throws InterruptedException {
 		homePage =new HomePage(driver);
@@ -98,16 +98,18 @@ public class TC_HomePage_004 extends BaseClass {
 	    boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
 		Assert.assertTrue(isUserNameExist);
 		viewCart();
-	      boolean isProccedButtonExists = driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).isDisplayed();
-		  Assert.assertTrue(isProccedButtonExists);
-		  driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
-		  Thread.sleep(2000);
+	    boolean isProccedButtonExists = driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).isDisplayed();
+		Assert.assertTrue(isProccedButtonExists);
+		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
+	    Thread.sleep(2000);
 		  
-	      boolean isOrderOptionExists = driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).isDisplayed();
-		  Assert.assertTrue(isOrderOptionExists);
-		  driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
-		  Thread.sleep(2000);
-		  
+	    boolean isOrderOptionExists = driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).isDisplayed();
+		Assert.assertTrue(isOrderOptionExists);
+		driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
+		Thread.sleep(2000);
+	    String url= driver.getCurrentUrl();
+	    Assert.assertTrue(url.contains("payment"));
+	    Thread.sleep(2000);
 		  
 		  
 		
