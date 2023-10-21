@@ -9,7 +9,12 @@ import com.qa.base.BaseClass;
 import com.qa.pages.LogInPage;
 import com.qa.pages.RegisterPage;
 
+import utils.Utils;
+
 public class TC_RegisterPage_001 extends BaseClass {
+	
+	RegisterPage registerPage;
+	Utils utils;
 	
 	// get url of targeted website
 	@Test(priority=0)
@@ -38,7 +43,7 @@ public class TC_RegisterPage_001 extends BaseClass {
 	@Test(priority=2, description = "User shall be proceed to signup with valid name and email")
 	public void doSignUpWithValidEmail() throws InterruptedException {
      RegisterPage rp=new RegisterPage(driver);
-        rp.register("Mahin","mahin1111@gmail.com");
+        rp.register("Mahin","mahi11@gmail.com");
         
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup"; // will redirect to signup page
@@ -63,15 +68,31 @@ public class TC_RegisterPage_001 extends BaseClass {
 	
 	
 	
+//	@Test(priority=4, description = "User account shall be created with all required information input")
+//	public void fillupValidSignupInformation() throws InterruptedException {
+//      RegisterPage rp=new RegisterPage(driver);
+//      
+//      rp.informationPage("1234",5,6,6);
+//      rp.addressInfo("Mahin","Ferdous","xyz company","ecb road, 1206","dhaka","dhaka","1216","444444444");
+//		String actualTitle= driver.getTitle();
+//		String ExpTitle= "Automation Exercise - Account Created"; // will redirect to account created validation page
+//		Assert.assertEquals(actualTitle, ExpTitle);
+//	}
+//	
+	
 	@Test(priority=4, description = "User account shall be created with all required information input")
 	public void fillupValidSignupInformation() throws InterruptedException {
-      RegisterPage rp=new RegisterPage(driver);
+      registerPage =new RegisterPage(driver);
       
-      rp.informationPage("1234",5,6,6);
-      rp.addressInfo("Mahin","Ferdous","xyz company","ecb road, 1206","dhaka","dhaka","1216","444444444");
+      registerPage.informationPage("1234",5,6,6);
+      Utils utils = new Utils();
+      utils.generateUserSignUpAddressInfo();
+     registerPage.addressInfo(utils.getFirstName(),utils.getLastName(),utils.getCompanyName(),utils.getAddress(), utils.getCity(), utils.getState(), utils.getZipCode(), utils.getPhone());
+     
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Account Created"; // will redirect to account created validation page
 		Assert.assertEquals(actualTitle, ExpTitle);
+		
 	}
 	
 	

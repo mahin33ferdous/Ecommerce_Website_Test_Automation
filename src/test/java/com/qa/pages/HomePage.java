@@ -114,4 +114,23 @@ public class HomePage extends BaseClass{
 		
 		
 	}
+	
+	public void viewCart() throws InterruptedException {
+		driver.findElement(By.xpath("//a[@href='/view_cart']")).click();
+		 Thread.sleep(2000);
+	}
+	
+	public void deleteProduct() throws InterruptedException {
+		 
+		driver.findElement(By.xpath("//tr[@id='product-3']//a[1]/i[1]")).click();
+		Thread.sleep(2000);
+	}
+	
+	public void logInToCheckout() throws InterruptedException {
+		 
+		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
+		Thread.sleep(2000); 
+		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
+		Thread.sleep(2000); 
+	}
 }
