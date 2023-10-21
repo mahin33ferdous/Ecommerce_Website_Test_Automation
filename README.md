@@ -1,1 +1,5 @@
-Ecommerce Website Test Automation Selenium TestNG
+# My Project
+
+This is a description of my project.
+
+## Installation
