@@ -88,7 +88,7 @@ Click =>Binaries
 * Varify User can't logged in with invalid password
 * Verify user can't checkout order without logging into website.
 
-# Automaion Output 
+# Automation Output 
 
 **Sign Up module**
 
