@@ -1,19 +1,23 @@
 
-# Ecommerce Website Test Automation Selenium TestNG
 
-## Content 
+## Ecommerce Website Test Automation Selenium TestNG
 
-* Introduction
-* Technologies
-* Installation
-* prerequisites
-* Scenario
-* Automaion Output 
+# Content
+- [Introduction](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#introduction)
+- [Technologies](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#technologies)
+- [Installation](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#installation)
+- [Prerequisites](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#prerequisites)
+- [Scenario](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#scenario)
+- [Automation Output](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation#automation-output)
 
-## Introduction
+
+
+
+# Introduction
 -This is a complete project where an e-commerce site https://www.automationexercise.com/ is automated by writing test suites using selenium-webdriver and TestNg as testing framework. This project provides test automation scripts to demonstrate user experience for various action through an online clothing store using Selenium WebDriver.
 
-#### Modules that are automated:
+**Modules that are automated:**
+
 * Sign Up 
 * Log in
 * Home
@@ -22,7 +26,7 @@
 * Place order
 
 
-## Technologies
+# Technologies
 Java Development Kit (JDK): JDK
 
 Selenium WebDriver for Java: Selenium WebDriver
@@ -32,7 +36,7 @@ Eclipse framwork
 
 TestNG: TestNG 7.8.1
 
-## Installation
+# Installation
 Java
 
 https://www.oracle.com/java/technologies/downloads/
@@ -45,9 +49,7 @@ Click =>Binaries
 =>apache-maven-3.9.4-bin.zip
 
 
-## preequisites
-
-Prerequisites
+**Prerequisites**
 
 1. Need to install jdk 1.8 
 2. Configure Environment variable for jdk 1.8 
@@ -60,9 +62,9 @@ Prerequisites
 9. You can see test results in the terminal
 
 
-## Scenario
+# Scenario
 
-### Positive Scenrio
+**Positive Scenrio**
 
 * User shall be proceed to signup with valid name and email
 * User account shall be created with all required information input
@@ -76,7 +78,7 @@ Prerequisites
 * Verify user is able to checkout order after logging in.
 
 
-### Negative Scenrio
+**Negative Scenrio**
 
 * User shall not be proceed signup with blank input
 * User shall not be able to create account with blank information input
@@ -86,21 +88,17 @@ Prerequisites
 * Varify User can't logged in with invalid password
 * Verify user can't checkout order without logging into website.
 
-## Automaion Output 
+# Automaion Output 
 
-### Sign Up module 
+**Sign Up module**
 
 https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/1327b31f-241c-43d2-9821-43846276289a
 
-
-### Log In module 
-
+**Log In module** 
 
 https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/15e9d172-cb7b-481e-b941-e0b5ed1108ef
 
-
-### Home and order module 
+**Home and order module** 
 
 
 https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/6d09d1ec-5131-4c72-a063-f745c6845c44
-
