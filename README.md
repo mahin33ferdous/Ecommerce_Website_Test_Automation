@@ -49,7 +49,7 @@ Click =>Binaries
 =>apache-maven-3.9.4-bin.zip
 
 
-**Prerequisites**
+# Prerequisites 
 
 1. Need to install jdk 1.8 
 2. Configure Environment variable for jdk 1.8 
