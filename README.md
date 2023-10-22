@@ -90,10 +90,17 @@ Prerequisites
 
 ### Sign Up module 
 
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/1327b31f-241c-43d2-9821-43846276289a
+
 
 ### Log In module 
 
-<video src="Ecom_LogInPage.mp4" controls title="LogIn_Module"></video>
+
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/15e9d172-cb7b-481e-b941-e0b5ed1108ef
+
 
 ### Home and order module 
-<video src="Ecom_Home_Order-1.mp4" controls title="Order_Module"></video>
+
+
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/6d09d1ec-5131-4c72-a063-f745c6845c44
+
