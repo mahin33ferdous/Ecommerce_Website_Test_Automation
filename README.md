@@ -99,8 +99,8 @@ https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/10874
 https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/15e9d172-cb7b-481e-b941-e0b5ed1108ef
 
 
+[![Video Thumbnail](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/83fa4253-6a80-4376-9c41-a92078f5e3fe)](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/15e9d172-cb7b-481e-b941-e0b5ed1108ef)
 
-[![Video Thumbnail](https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/83fa4253-6a80-4376-9c41-a92078f5e3fe)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 
 
