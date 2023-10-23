@@ -1,6 +1,8 @@
 package com.qa.testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -107,7 +109,7 @@ public class TC_HomePage_004 extends BaseClass {
   	    Thread.sleep(2000); 
 
 		loginPage=new LogInPage(driver);
-		loginPage.login("mahin1111@gmail.com", "1234");
+		loginPage.login("mahi321@gmail.com", "1234");
 		
 	    boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
 		Assert.assertTrue(isUserNameExist);
@@ -116,9 +118,15 @@ public class TC_HomePage_004 extends BaseClass {
 		Assert.assertTrue(isProccedButtonExists);
 		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
 	    Thread.sleep(2000);
-		  
+		   
 	    boolean isOrderOptionExists = driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).isDisplayed();
 		Assert.assertTrue(isOrderOptionExists);
+		
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+		 // Scrolling down to the featured items
+		 WebElement location=driver.findElement(By.xpath("//a[contains(text(),'Place Order')]"));
+		 js.executeScript("arguments[0].scrollIntoView(true);",location );
+		 
 		driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
 		Thread.sleep(2000);
 	    String url2= driver.getCurrentUrl();

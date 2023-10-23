@@ -30,7 +30,7 @@ public class TC_RegisterPage_001 extends BaseClass {
       RegisterPage rp=new RegisterPage(driver);
       
       rp.signUpWithBlankInput();
-      Thread.sleep(2000);
+      Thread.sleep(1000);
       
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup / Login"; // will stay in same page
@@ -43,7 +43,7 @@ public class TC_RegisterPage_001 extends BaseClass {
 	@Test(priority=2, description = "User shall be proceed to signup with valid name and email")
 	public void doSignUpWithValidEmail() throws InterruptedException {
      RegisterPage rp=new RegisterPage(driver);
-        rp.register("Mahin","mahi11@gmail.com");
+        rp.register("Mahin","mahi321@gmail.com");
         
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup"; // will redirect to signup page
@@ -120,7 +120,7 @@ public class TC_RegisterPage_001 extends BaseClass {
 	@Test(priority=7, description = "Varify User can't create account with already used email")
 	public void signUpWithSameEmail() throws InterruptedException {
 	     RegisterPage rp=new RegisterPage(driver);
-	     rp.register("Mahin22","mahin1111@gmail.com");
+	     rp.register("Mahin22","mahi321@gmail.com");
 
 	    boolean Error_Already_used_Email = driver.findElement(By.xpath("//p[contains(text(),'Email Address already exist!')]")).isDisplayed();
 		Assert.assertTrue(Error_Already_used_Email);

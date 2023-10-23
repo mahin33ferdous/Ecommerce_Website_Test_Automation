@@ -42,14 +42,14 @@ public class RegisterPage extends BaseClass{
 		  signup1.click();
 		 Thread.sleep(2000);
 		 signupSubmit.click();;
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 	}
 
 
 	
 	public void register(String n,String p) throws InterruptedException {
-		signup.click();
-		Thread.sleep(1000);
+//		signup.click();
+//		Thread.sleep(1000);
 		
 		name.click();
 		name.sendKeys(n);
@@ -74,6 +74,8 @@ public class RegisterPage extends BaseClass{
 		 
 		 createAccount.click();
 		 Thread.sleep(2000);
+		
+		 js.executeScript("window.scrollTo(0,0)");
 	}
 	
 
@@ -119,8 +121,8 @@ public class RegisterPage extends BaseClass{
 		
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 // Scrolling dowm
-		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-		 Thread.sleep(1000);
+//		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+//		 Thread.sleep(1000);
 		 
 		 // Scrolling down to the featured items
 		 WebElement location=driver.findElement(By.xpath("//*[contains(text(),'Address Information')]"));

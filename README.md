@@ -10,7 +10,7 @@
 * Scenario
 * Automaion Output 
 
-### Introduction
+## Introduction
 -This is a complete project where an e-commerce site https://www.automationexercise.com/ is automated by writing test suites using selenium-webdriver and TestNg as testing framework. This project provides test automation scripts to demonstrate user experience for various action through an online clothing store using Selenium WebDriver.
 
 #### Modules that are automated:
@@ -82,14 +82,16 @@ Prerequisites
 * User shall not be able to create account with blank information input
 * Varify User can't create account with already used email
 * Varify User can't logged in with empty input field
-* Varify User can't logged in invalid email address
-* Varify User can't logged in invalid password
-* Verify user can't checkout order without logging in.
+* Varify User can't logged in with invalid email address
+* Varify User can't logged in with invalid password
+* Verify user can't checkout order without logging into website.
 
 ## Automaion Output 
 
 ### Sign Up module 
 
 ### Log In module 
+
+
 
 ### Home and order module 

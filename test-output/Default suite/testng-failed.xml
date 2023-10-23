@@ -6,6 +6,7 @@
       <class name="com.qa.testcases.TC_HomePage_004">
         <methods>
           <include name="loginWithAndCheckOut"/>
+          <include name="CheckoutWithOutLogIn"/>
           <include name="startBrowser"/>
           <include name="close"/>
         </methods>

@@ -33,7 +33,8 @@ public class TC_LogInPage_002 extends BaseClass {
 	public void loginWithEmptyInput() throws InterruptedException {
 
 		loginPage=new LogInPage(driver);
-		loginPage.login("", "");
+		//loginPage.login("", "");
+		loginPage.loginWithEmptyInput();
 		String actualTitle= driver.getTitle();
 		String ExpTitle= "Automation Exercise - Signup / Login"; // will stay in same page
 		Assert.assertEquals(actualTitle, ExpTitle);
@@ -57,7 +58,7 @@ public class TC_LogInPage_002 extends BaseClass {
 	public void loginWithInvalidPassword() throws InterruptedException {
 		
 		loginPage=new LogInPage(driver);
-		loginPage.login("mahin1111@gmail.com", "1234444444444444");
+		loginPage.login("mahi321@gmail.com", "1234444444444444");
 
 	    boolean Error_Validate_Invalid_Email = driver.findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect!')]")).isDisplayed();
 		Assert.assertTrue(Error_Validate_Invalid_Email);
@@ -70,7 +71,7 @@ public class TC_LogInPage_002 extends BaseClass {
 	public void loginWithValidEmailAndPassword() throws InterruptedException {
 		
 		loginPage=new LogInPage(driver);
-		loginPage.login("mahin1111@gmail.com", "1234");
+		loginPage.login("mahi321@gmail.com", "1234");
 		
 	    boolean isUserNameExist = driver.findElement(By.xpath("//b[contains(text(),'Mahin')]")).isDisplayed();
 		Assert.assertTrue(isUserNameExist);

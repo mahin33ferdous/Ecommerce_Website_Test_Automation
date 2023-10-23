@@ -76,12 +76,12 @@ public class HomePage extends BaseClass{
 		 // Scrolling down to the featured items
 		 WebElement location=driver.findElement(By.xpath("//div[@class='features_items']"));
 		 js.executeScript("arguments[0].scrollIntoView(true);",location );
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 
 		 
 		 driver.findElement(By.xpath("//div[@class=\"features_items\"]//div[1]/div[1]/a[1][@data-product-id='3']")).click();
 		 
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 
 		 continueShopping.click();
 		
@@ -97,24 +97,24 @@ public class HomePage extends BaseClass{
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 // Scrolling dowm
 //		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-//		 Thread.sleep(3000);
+//		 Thread.sleep(2000);
 		 
 		 // Scrolling down to the featured items
 		 WebElement location=driver.findElement(By.xpath("//div[@class='recommended_items']"));
 		 js.executeScript("arguments[0].scrollIntoView(true);",location );
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 
 		 //recomendedItems.get(2).findElement(By.xpath("//div[@class='recommended_items']//div[@class='productinfo text-center']//a")).click();
 		
 		 driver.findElement(By.xpath("//div[@class=\"recommended_items\"]//div/div[1]/a[1][@data-product-id=\"2\"]")).click();
 		 
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 continueShopping.click();
 		 
 		 //Scrolling back to the top
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 js.executeScript("window.scrollTo(0,0)");
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 
 		 
 		
@@ -126,11 +126,11 @@ public class HomePage extends BaseClass{
 		 Thread.sleep(2000);
 	}
 	
-	public void deleteProduct() throws InterruptedException {
-		 
-		driver.findElement(By.xpath("//tr[@id='product-3']//a[1]/i[1]")).click();
-		Thread.sleep(2000);
-	}
+//	public void deleteProduct() throws InterruptedException {
+//		 
+//		driver.findElement(By.xpath("//tr[@id='product-3']//a[1]/i[1]")).click();
+//		Thread.sleep(2000);
+//	}
 	
 	public void checkoutWithOutLogIn() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();

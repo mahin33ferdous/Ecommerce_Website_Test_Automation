@@ -30,24 +30,27 @@ public class LogInPage extends BaseClass{
 	
 	
 	public void loginWithEmptyInput() throws InterruptedException {
+		login.click();
+		Thread.sleep(2000);
+		
 		loginSubmit.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 	}
 
 	
 	public void login(String e,String p) throws InterruptedException {
 		login.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	
 		email.sendKeys(e);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		password.sendKeys(p);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		loginSubmit.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	
 	}
 	
