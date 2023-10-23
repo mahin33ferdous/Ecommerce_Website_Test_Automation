@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.TC_HomePage_004">
         <methods>
-          <include name="deleteFromCart"/>
+          <include name="loginWithAndCheckOut"/>
           <include name="startBrowser"/>
           <include name="close"/>
         </methods>

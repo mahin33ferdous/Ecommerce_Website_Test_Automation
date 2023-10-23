@@ -21,7 +21,7 @@ public class TC_HomePage_004 extends BaseClass {
 	
 	// Positive scenario
 	// check the total number of links from entire homepage 
-	@Test(priority=1)
+	@Test(priority=1, description = "Verify all the link exists on homepage")
 	public void checkLinkCount() {
 		homePage=new HomePage(driver);
 		homePage.checkLinkCounts();
@@ -38,7 +38,7 @@ public class TC_HomePage_004 extends BaseClass {
 	// Positive scenario
 	// check the total number of links of category from entire homepage 
 	
-	@Test(priority=2)
+	@Test(priority=2, description = "Verify all the category link exists on homepage")
 	public void checkCategoriesLink() {
 		homePage=new HomePage(driver);
 		homePage.checkMainCategories();
@@ -49,7 +49,7 @@ public class TC_HomePage_004 extends BaseClass {
 	}
 	
 //add items from featured items		
-	@Test(priority=3)
+	@Test(priority=3, description = "Verify user can add featured products to the cart")
 	public void checkFeaturedProduct() throws InterruptedException {
 		homePage =new HomePage(driver);
 		homePage.featuredItemsVisible();
@@ -57,14 +57,14 @@ public class TC_HomePage_004 extends BaseClass {
 	
 
 	
-	@Test(priority=4)
+	@Test(priority=4, description = "Verify user can add recomended products to the cart")
 	public void checkRecomendededProduct() throws InterruptedException {
 		homePage =new HomePage(driver);
 		homePage.recomendItemsVisible();
 		Thread.sleep(3000);
 	}
-	
-	@Test(priority=5)
+////	
+	@Test(priority=5, description = "Verify user can view cart")
 	public void viewCart() throws InterruptedException {
 		homePage =new HomePage(driver);
 		homePage.viewCart();
@@ -72,26 +72,40 @@ public class TC_HomePage_004 extends BaseClass {
         Assert.assertTrue(url.contains("view_cart"));
 		
 	}
-	
-//	@Test(priority=8)
-//	public void deleteFromCart() throws InterruptedException {
-//		homePage =new HomePage(driver);
-//		homePage.deleteProduct();
-//    //error ask question	
-//	}
 //	
-	@Test(priority=8)
-	public void CheckoutLogIn() throws InterruptedException {
+////	@Test(priority=8)
+////	public void deleteFromCart() throws InterruptedException {
+////		homePage =new HomePage(driver);
+////		homePage.deleteProduct();
+////    //error ask question	
+////	}
+////	
+	
+	@Test(priority=8, description = "Verify user can't checkout order without logging in")
+	public void CheckoutWithOutLogIn() throws InterruptedException {
 		homePage =new HomePage(driver);
-		homePage.logInToCheckout();
-        String url= driver.getCurrentUrl();
-        Assert.assertTrue(url.contains("login"));
+		homePage.checkoutWithOutLogIn();
+	    //boolean required_LogIn_to_Checkout_Model = driver.findElement(By.xpath("//p[contains(text(),'Register / Login account to proceed on checkout.')]")).isDisplayed();
+		boolean required_LogIn_to_Checkout_Model = driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).isDisplayed();
+		Assert.assertTrue(required_LogIn_to_Checkout_Model );
 
 	}
+//	
+////	@Test(priority=8)
+////	public void CheckoutLogIn() throws InterruptedException {
+////		homePage =new HomePage(driver);
+////		homePage.logInToCheckout();
+////        String url= driver.getCurrentUrl();
+////        Assert.assertTrue(url.contains("login"));
+////
+//	}
 	
 	@Test(priority=9, description = "Varify User logged in with for checkout")
 	public void loginWithAndCheckOut() throws InterruptedException {
 		
+		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
+  	    Thread.sleep(2000); 
+
 		loginPage=new LogInPage(driver);
 		loginPage.login("mahin1111@gmail.com", "1234");
 		
@@ -107,8 +121,8 @@ public class TC_HomePage_004 extends BaseClass {
 		Assert.assertTrue(isOrderOptionExists);
 		driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
 		Thread.sleep(2000);
-	    String url= driver.getCurrentUrl();
-	    Assert.assertTrue(url.contains("payment"));
+	    String url2= driver.getCurrentUrl();
+	    Assert.assertTrue(url2.contains("payment"));
 	    Thread.sleep(2000);
 		  
 		  

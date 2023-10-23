@@ -50,7 +50,7 @@ public class HomePage extends BaseClass{
 		 int totalLink=links.size();
 		 System.out.println(totalLink);
 		for(WebElement elements : links) {
-			System.out.println(elements.getText());
+			//System.out.println(elements.getText());
 		}
 		return totalLink;
 	}	
@@ -72,12 +72,16 @@ public class HomePage extends BaseClass{
 		int totalItems=featuredItems.size();
 		 
 		 System.out.println("Featured items available: " + totalItems);
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 // Scrolling down to the featured items
+		 WebElement location=driver.findElement(By.xpath("//div[@class='features_items']"));
+		 js.executeScript("arguments[0].scrollIntoView(true);",location );
+		 Thread.sleep(3000);
 		 
-		
 		 
-		 featuredItems.get(4).findElement(By.xpath("//div[1]/div/div[2]/div[1]/div/div/div[1]/div[1]/a")).click();
-		 //  add '.' in the start of xpath so it can search within all element
-		 Thread.sleep(5000);
+		 driver.findElement(By.xpath("//div[@class=\"features_items\"]//div[1]/div[1]/a[1][@data-product-id='3']")).click();
+		 
+		 Thread.sleep(3000);
 		 
 		 continueShopping.click();
 		
@@ -92,16 +96,18 @@ public class HomePage extends BaseClass{
 		 
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 // Scrolling dowm
-		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-		 Thread.sleep(3000);
+//		 js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+//		 Thread.sleep(3000);
 		 
 		 // Scrolling down to the featured items
 		 WebElement location=driver.findElement(By.xpath("//div[@class='recommended_items']"));
 		 js.executeScript("arguments[0].scrollIntoView(true);",location );
 		 Thread.sleep(3000);
 
-		 recomendedItems.get(2).findElement(By.xpath("//div[@class='recommended_items']//div[@class='productinfo text-center']//a")).click();
-		 //  add '.' in the start of xpath so it can search within all element
+		 //recomendedItems.get(2).findElement(By.xpath("//div[@class='recommended_items']//div[@class='productinfo text-center']//a")).click();
+		
+		 driver.findElement(By.xpath("//div[@class=\"recommended_items\"]//div/div[1]/a[1][@data-product-id=\"2\"]")).click();
+		 
 		 Thread.sleep(3000);
 		 continueShopping.click();
 		 
@@ -126,16 +132,22 @@ public class HomePage extends BaseClass{
 		Thread.sleep(2000);
 	}
 	
-	public void logInToCheckout() throws InterruptedException {
-		 
+	public void checkoutWithOutLogIn() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
-		Thread.sleep(2000); 
-		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
 		Thread.sleep(2000); 
 	}
 	
+//	public void logInToCheckout() throws InterruptedException {
+//		 
+//		driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
+//		Thread.sleep(2000); 
+//		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();
+//		Thread.sleep(2000); 
+//	}
+//	
 	public void paymentAndConfirm() throws InterruptedException {
 		 
+
 		driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
 		Thread.sleep(2000); 
 		driver.findElement(By.xpath("//u[contains(text(),'Register / Login')]")).click();

@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-21T02:31:51 GMT-11:00" name="Default suite" finished-at="2023-10-21T02:33:29 GMT-11:00" duration-ms="98473">
+  <suite started-at="2023-10-22T04:31:22 GMT-11:00" name="Default suite" finished-at="2023-10-22T04:32:24 GMT-11:00" duration-ms="62396">
     <groups>
     </groups>
-    <test started-at="2023-10-21T02:31:51 GMT-11:00" name="Default test" finished-at="2023-10-21T02:33:29 GMT-11:00" duration-ms="98473">
+    <test started-at="2023-10-22T04:31:22 GMT-11:00" name="Default test" finished-at="2023-10-22T04:32:24 GMT-11:00" duration-ms="62396">
       <class name="com.qa.testcases.TC_HomePage_004">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:31:48 GMT-11:00" name="startBrowser" finished-at="2023-10-21T02:31:51 GMT-11:00" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:20 GMT-11:00" name="startBrowser" finished-at="2023-10-22T04:31:22 GMT-11:00" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:31:51 GMT-11:00" name="test1" finished-at="2023-10-21T02:31:54 GMT-11:00" duration-ms="3830" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:22 GMT-11:00" name="test1" finished-at="2023-10-22T04:31:26 GMT-11:00" duration-ms="4298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="checkLinkCount()[pri:1, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:31:54 GMT-11:00" name="checkLinkCount" finished-at="2023-10-21T02:31:57 GMT-11:00" duration-ms="2509" status="PASS">
+        <test-method signature="checkLinkCount()[pri:1, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:26 GMT-11:00" name="checkLinkCount" description="Verify all the link exists on homepage" finished-at="2023-10-22T04:31:26 GMT-11:00" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLinkCount -->
-        <test-method signature="checkCategoriesLink()[pri:2, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:31:57 GMT-11:00" name="checkCategoriesLink" finished-at="2023-10-21T02:31:57 GMT-11:00" duration-ms="90" status="PASS">
+        <test-method signature="checkCategoriesLink()[pri:2, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:26 GMT-11:00" name="checkCategoriesLink" description="Verify all the category link exists on homepage" finished-at="2023-10-22T04:31:26 GMT-11:00" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCategoriesLink -->
-        <test-method signature="checkFeaturedProduct()[pri:3, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:31:57 GMT-11:00" name="checkFeaturedProduct" finished-at="2023-10-21T02:32:02 GMT-11:00" duration-ms="5124" status="PASS">
+        <test-method signature="checkFeaturedProduct()[pri:3, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:26 GMT-11:00" name="checkFeaturedProduct" description="Verify user can add featured products to the cart" finished-at="2023-10-22T04:31:33 GMT-11:00" duration-ms="6151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFeaturedProduct -->
-        <test-method signature="checkRecomendededProduct()[pri:4, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:32:02 GMT-11:00" name="checkRecomendededProduct" finished-at="2023-10-21T02:32:20 GMT-11:00" duration-ms="18158" status="PASS">
+        <test-method signature="checkRecomendededProduct()[pri:4, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:33 GMT-11:00" name="checkRecomendededProduct" description="Verify user can add recomended products to the cart" finished-at="2023-10-22T04:31:48 GMT-11:00" duration-ms="15153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRecomendededProduct -->
-        <test-method signature="viewCart()[pri:5, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:32:20 GMT-11:00" name="viewCart" finished-at="2023-10-21T02:32:24 GMT-11:00" duration-ms="4004" status="PASS">
+        <test-method signature="viewCart()[pri:5, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:48 GMT-11:00" name="viewCart" description="Verify user can view cart" finished-at="2023-10-22T04:31:53 GMT-11:00" duration-ms="5556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewCart -->
-        <test-method signature="CheckoutLogIn()[pri:8, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:32:24 GMT-11:00" name="CheckoutLogIn" finished-at="2023-10-21T02:32:30 GMT-11:00" duration-ms="5450" status="PASS">
+        <test-method signature="CheckoutWithOutLogIn()[pri:8, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:53 GMT-11:00" name="CheckoutWithOutLogIn" description="Verify user can&#039;t checkout order without logging in" finished-at="2023-10-22T04:31:55 GMT-11:00" duration-ms="2084" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckoutLogIn -->
-        <test-method signature="deleteFromCart()[pri:8, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:32:30 GMT-11:00" name="deleteFromCart" finished-at="2023-10-21T02:33:00 GMT-11:00" duration-ms="30070" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- CheckoutWithOutLogIn -->
+        <test-method signature="loginWithAndCheckOut()[pri:9, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:31:55 GMT-11:00" name="loginWithAndCheckOut" description="Varify User logged in with for checkout" finished-at="2023-10-22T04:32:24 GMT-11:00" duration-ms="28896" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tr[@id='product-3']//a[1]/i[1]"}
+              <![CDATA[element click intercepted: Element <a href="/payment" class="btn btn-default check_out">...</a> is not clickable at point (1403, 904). Other element would receive the click: <iframe id="aswift_8" name="aswift_8" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20231017/r20110914/zrt_lookup.html?fsb=1#RS-3-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=9&amp;uci=a!9&amp;btvi=7&amp;xpc=ZvZEgVXWsQ&amp;p=https%3A//www.automationexercise.com" data-google-container-id="a!9" data-google-query-id="CJ-G2rKZiIIDFb6UrAIdHQUG1Q" data-load-complete="true"></iframe>
   (Session info: chrome=118.0.5993.89)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [54e9ec6873e2be43b09d0f995bd6d566, findElement {using=xpath, value=//tr[@id='product-3']//a[1]/i[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Shoily\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58534/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 54e9ec6873e2be43b09d0f995bd6d566]]>
+Command: [8b79e20c8da9f99945244116a9878976, clickElement {id=0C47640C02622699F112D179E9BE39DD_element_482}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Shoily\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54265/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b79e20c8da9f99945244116a9878976)] -> xpath: //a[contains(text(),'Place Order')]]
+Session ID: 8b79e20c8da9f99945244116a9878976]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[@id='product-3']//a[1]/i[1]"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/payment" class="btn btn-default check_out">...</a> is not clickable at point (1403, 904). Other element would receive the click: <iframe id="aswift_8" name="aswift_8" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20231017/r20110914/zrt_lookup.html?fsb=1#RS-3-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=9&amp;uci=a!9&amp;btvi=7&amp;xpc=ZvZEgVXWsQ&amp;p=https%3A//www.automationexercise.com" data-google-container-id="a!9" data-google-query-id="CJ-G2rKZiIIDFb6UrAIdHQUG1Q" data-load-complete="true"></iframe>
   (Session info: chrome=118.0.5993.89)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [54e9ec6873e2be43b09d0f995bd6d566, findElement {using=xpath, value=//tr[@id='product-3']//a[1]/i[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Shoily\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58534/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 54e9ec6873e2be43b09d0f995bd6d566
+Command: [8b79e20c8da9f99945244116a9878976, clickElement {id=0C47640C02622699F112D179E9BE39DD_element_482}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Shoily\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54265/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b79e20c8da9f99945244116a9878976)] -> xpath: //a[contains(text(),'Place Order')]]
+Session ID: 8b79e20c8da9f99945244116a9878976
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -72,12 +72,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at com.qa.pages.HomePage.deleteProduct(HomePage.java:125)
-at com.qa.testcases.TC_HomePage_004.deleteFromCart(TC_HomePage_004.java:79)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.qa.testcases.TC_HomePage_004.loginWithAndCheckOut(TC_HomePage_004.java:122)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -106,15 +103,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteFromCart -->
-        <test-method signature="loginWithAndCheckOut()[pri:9, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:33:00 GMT-11:00" name="loginWithAndCheckOut" description="Varify User logged in with for checkout" finished-at="2023-10-21T02:33:29 GMT-11:00" duration-ms="29202" status="PASS">
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithAndCheckOut -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_HomePage_004@5b12b668]" started-at="2023-10-21T02:33:29 GMT-11:00" name="close" finished-at="2023-10-21T02:33:29 GMT-11:00" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.testcases.TC_HomePage_004@327514f]" started-at="2023-10-22T04:32:24 GMT-11:00" name="close" finished-at="2023-10-22T04:32:24 GMT-11:00" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
