@@ -90,7 +90,6 @@ Prerequisites
 
 ### Sign Up module 
 
-<video src="Ecom_RegisterPage-1.mp4" controls title="Sign_Up_Module"></video>
 
 ### Log In module 
 
