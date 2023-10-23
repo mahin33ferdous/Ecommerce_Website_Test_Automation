@@ -90,8 +90,11 @@ Prerequisites
 
 ### Sign Up module 
 
+<video src="Ecom_RegisterPage-1.mp4" controls title="Sign_Up_Module"></video>
+
 ### Log In module 
 
-
+<video src="Ecom_LogInPage.mp4" controls title="LogIn_Module"></video>
 
 ### Home and order module 
+<video src="Ecom_Home_Order-1.mp4" controls title="Order_Module"></video>
