@@ -25,6 +25,7 @@
 * View cart
 * Place order
 
+**24 test cases are automated.**
 
 # Technologies
 Java Development Kit (JDK): JDK
