@@ -97,13 +97,21 @@ Click =>Binaries
 **Sign Up module**
 
 
-https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/1327b31f-241c-43d2-9821-43846276289a
+
+
+
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/9b9b6bc6-dd78-47d7-9571-e97a20540760
+
 
 
 **Log In module** 
 
 
-https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/15e9d172-cb7b-481e-b941-e0b5ed1108ef
+
+
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/d5a18533-6372-4905-95ed-dec643525585
+
+
 
 
 
@@ -111,4 +119,7 @@ https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/10874
 
 
 
-https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/6d09d1ec-5131-4c72-a063-f745c6845c44
+
+https://github.com/mahin33ferdous/Ecommerce_Website_Test_Automation/assets/108746973/b5ea8dc8-67aa-4b8c-9e3d-52d262a6d7c5
+
+
